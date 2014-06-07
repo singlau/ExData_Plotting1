@@ -12,7 +12,7 @@ png("plot2.png")
 
 ## Make the Plot2
 with(powerData, 
-     plot(strptime(paste(powerData$Date, powerData$Time), 
+     plot(strptime(paste(Date, Time), 
                    format="%d/%m/%Y %H:%M:%S"), 
           as.numeric(Global_active_power), 
      type = "l",
